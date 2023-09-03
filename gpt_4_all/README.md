@@ -20,3 +20,6 @@ python gpt_4_all/main.py
 
 ### GPT4All website
 https://gpt4all.io/index.html
+
+### Conclusions
+This project is still under development, not concrete stability, and a more than 200 open issues in its github repo without any solution yet.

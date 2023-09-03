@@ -1,11 +1,12 @@
 import os
+from dotenv import load_dotenv
 from langchain import PromptTemplate, LLMChain
-
 from langchain.llms import GPT4All
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 from gpt4all import GPT4All as OrigGPT4All
 
+load_dotenv()
 BASE_PATH = os.path.dirname(__file__)
 # Set Up Question to pass to LLM
 template = """Question: {question}
@@ -17,7 +18,9 @@ prompt = PromptTemplate(template=template, input_variables=["question"])
 # Specify Model
 # To run locally, download a compatible ggml-formatted model.
 
-model_name = "orca-mini-3b.ggmlv3.q4_0.bin"
+# model_name = "orca-mini-3b.ggmlv3.q4_0.bin"
+
+model_name = "ggml-gpt4all-j-v1.3-groovy.bin"
 
 gpt4all_models_path = os.path.join(
     BASE_PATH, "models", model_name
