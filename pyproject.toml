@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gpt-4-all"
+version = "0.1.0"
+description = "Explore GPT4All as provider that includes Chatbot and generative LLM for question/answers"
+authors = ["alex00pep <alexmtnezf@gmail.com>"]
+license = "GPL-3"
+readme = "README.md"
+packages = [{include = "gpt_4_all"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gpt4all = "^1.0.8"
+langchain = "^0.0.278"
+llm = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
