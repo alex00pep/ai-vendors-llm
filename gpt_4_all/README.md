@@ -1,5 +1,3 @@
-# AI LLM Exploration - Repo to explore usage and advantages of different vendors in the LLM world.
-
 ## Exploring GPT4All - by Nomic
 GPT4All is an open-source ecosystem used for integrating LLMs into applications without paying for a platform or hardware subscription. It was created by Nomic AI, an information cartography company that aims to improve access to AI resources.
 
